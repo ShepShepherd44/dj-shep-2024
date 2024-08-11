@@ -5,10 +5,32 @@
 
 .sectionTitle h2 a {
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .videoHome .sectionTitle p {
     color: #404040;
+}
+
+.contactHomePage .social-btns a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+
+    font-size: 2em;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+.contactHomePage .social-btns a:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 @media only screen and (min-width: 1025px) {

@@ -13622,7 +13622,7 @@ img.rsImg {
 *
 *  RoyalSlider White Controls Skin
 *
-*    1. Arrows 
+*    1. Arrows
 *    2. Bullets
 *    3. Thumbnails
 *    4. Tabs
@@ -13630,11 +13630,11 @@ img.rsImg {
 *    6. Play/close video button
 *    7. Preloader
 *    8. Caption
-*    
+*
 *  Sprite: 'rs-minimal-white.png'
 *  Feel free to edit anything
 *  If you don't some part - just delete it
-* 
+*
 ******************************/
 /* Background */
 .rsMinW,
@@ -14708,33 +14708,6 @@ section #services li div i:hover {
   border-radius: 10rem;
   background-color: #bb9b69;
 }
-.fa-apple {
-  background-color: #CACACA;
-}
-.fa-soundcloud {
-  background-color: #CACACA;
-}
-.fa-lastfm {
-  background-color: #CACACA;
-}
-.fa-facebook {
-  background-color: #CACACA;
-}
-.fa-twitter {
-  background-color: #CACACA;
-}
-.fa-instagram {
-  background-color: #CACACA;
-}
-.fa-youtube {
-  background-color: #CACACA;
-}
-.fa-spotify {
-  background-color: #CACACA;
-}
-.fa-amazon {
-  background-color: #CACACA;
-}
 /***********************************************************************************************/
 /* END INGLE ALBUM */
 /***********************************************************************************************/
@@ -15157,7 +15130,7 @@ p a {
     opacity: 0;
   }
 }
-/* 
+/*
  *  Owl Carousel - Auto Height Plugin
  */
 .owl-height {
@@ -15167,7 +15140,7 @@ p a {
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -15260,7 +15233,7 @@ p a {
 .no-js .owl-carousel {
   display: block;
 }
-/* 
+/*
  *  Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -15274,7 +15247,7 @@ p a {
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
 }
-/* 
+/*
  *  Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
