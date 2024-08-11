@@ -3,6 +3,14 @@
     aspect-ratio: 16 / 9;
 }
 
+.sectionTitle h2 a {
+    font-weight: bold;
+}
+
+.videoHome .sectionTitle p {
+    color: #404040;
+}
+
 @media only screen and (min-width: 1025px) {
     .list-albums .list-feature .thumbs-album {
         width: 260px;
