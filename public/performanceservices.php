@@ -1,177 +1,11 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
         <title>Biography</title>
-        <link rel="icon" href="assets/img/content/icon.png" />
-        <!-- ========== CSS INCLUDES ========== -->
-        <link rel="stylesheet" href="assets/css/master.css" />
+        <?php include "head.php"; ?>
     </head>
     <body>
-        <div class="page-loader">
-            <div class="vertical-align align-center">
-                <img src="assets/loader/loader.gif" alt="" class="loader-img" />
-            </div>
-        </div>
-        <!-- =============== START TOP HEADER ================ -->
-        <div class="topHeader">
-            <div class="header">
-                <div class="rightTopHeader">
-                    <!-- Open Menu Button -->
-                    <a class="open-menu">
-                        <!-- Buttons Bars -->
-                        <span class="span-1"></span>
-                        <span class="span-2"></span>
-                        <span class="span-3"></span>
-                    </a>
-                </div>
-                <!-- end rightTopHeader -->
-            </div>
-            <!-- end header -->
-            <!-- Menu Fixed Container -->
-            <div class="menu-fixed-container">
-                <!-- Menu Fixed Centred Container -->
-                <nav>
-                    <!-- Menu Fixed Close Button -->
-                    <div class="x-filter">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <!-- Menu Fixed Primary List -->
-                    <ul>
-                        <!-- Menu Fixed Item -->
-                        <li>
-                            <a href="index.html"> home </a>
-                            <ul class="sub-menu">
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="index.html"> home star </a>
-                                </li>
-                                <li>
-                                    <a href="index-royal-slider.html">
-                                        home royal slider
-                                    </a>
-                                </li>
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="index-video.html"> home video </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="albumsGrid.html"> discography </a>
-                            <ul class="sub-menu">
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="albumsFullBackground.html">
-                                        albums full background
-                                    </a>
-                                </li>
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="albumsGrid.html"> albums grid </a>
-                                </li>
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="albumsSingle1.html">
-                                        album description
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- Menu Fixed Item -->
-                        <li>
-                            <a href="events.html"> events </a>
-                        </li>
-                        <!-- Menu Fixed Item -->
-                        <li>
-                            <a href="#"> blog </a>
-                            <ul class="sub-menu">
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="blogGrid.html"> blog grid </a>
-                                </li>
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="blogSidebarRight.html">
-                                        blog sidebar
-                                    </a>
-                                </li>
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="blogSingle.html"> blog single </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- Menu Fixed Item -->
-                        <li>
-                            <a href="#"> gallery </a>
-                            <ul class="sub-menu">
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="galleryGrid.html"> albums grid </a>
-                                </li>
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="galleryScroll.html">
-                                        albums scroll
-                                    </a>
-                                </li>
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="gallerySingle.html">
-                                        gallery single
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- Menu Fixed Item -->
-                        <li>
-                            <a href="#"> Other Pages </a>
-                            <ul class="sub-menu">
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="biography.html"> Biography </a>
-                                </li>
-                                <!-- Menu Fixed Sub Menu Item -->
-                                <li>
-                                    <a href="video.html"> Video </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- Menu Fixed Item -->
-                        <li>
-                            <a href="contact.html"> contact </a>
-                        </li>
-                        <!-- Menu Fixed Item -->
-                        <li>
-                            <a href="shop.html"> shop </a>
-                        </li>
-                    </ul>
-                    <!-- Menu Fixed Close Button -->
-                    <div class="x-filter">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </nav>
-            </div>
-            <!-- end menu-fixed-container -->
-            <!-- =============== STAR LOGO ================ -->
-            <div class="logo-container-top">
-                <a href="index.html"
-                    ><img src="assets/img/logo/whiteLogo.png" alt="Aqura"
-                /></a>
-            </div>
-            <!-- end logo-container-top -->
-            <!-- =============== END LOGO ================ -->
-        </div>
-        <!-- end topHeader -->
-        <!-- =============== END TOP HEADER ================ -->
+        <?php include "header.php"; ?>
 
         <!-- =============== START PLAYER ================ -->
         <div class="main-music-player hide-player">
@@ -394,33 +228,24 @@
                         <div
                             class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
                             style="
-                                background-image: url(&quot;assets/img/header/eventsrecordsheader.jpg&quot;);
+                                background-image: url(&quot;assets/img/header/performanceheader1.jpg&quot;);
                             "
                             data-stellar-background-ratio="0.5"
                             data-stellar-vertical-offset="0"
                         >
-                            <div
-                                class="breadTxt"
-                                style="
-                                    background: rgba(0, 0, 0, 0.7);
-                                    display: inline-block;
-                                    padding: 20px;
-                                    border-radius: 10px;
-                                "
-                            >
-                                <h1 style="font-size: 2.5em">
-                                    DJ SHEP PRIVATE EVENTS
-                                </h1>
-                                <p style="font-size: 1.5em">
-                                    "Transforming private events into legendary
-                                    parties! With over two decades of DJ
-                                    mastery, <br />
-                                    I blend vinyl classics and cutting-edge
-                                    mixes to keep your guests vibing all night.
-                                    <br />
-                                    Let's create unforgettable memories and a
-                                    dance floor <br />
-                                    that never quits!"
+                            <div class="breadTxt">
+                                <h1>PERFORMANCES</h1>
+                                <p>
+                                    From performing live shows alongside
+                                    drummers and breakdancers to creating <br />
+                                    custom visual VDJ sets for clients, I can
+                                    help you make an impression<br />
+                                    and leave a lasting memory. With over 20
+                                    years of experience behind the turntables
+                                    and collaborations <br />
+                                    with top artists, your next event is in good
+                                    hands. Let’s create something special
+                                    together.
                                 </p>
                                 <a
                                     href="#content"
@@ -441,109 +266,126 @@
 
         <!-- =============== START BIOGRAPHY SECTION ================ -->
         <section
-            style="background-image: url(assets/img/subHeader/eventsheader.png)"
+            style="
+                background-image: url(assets/img/subHeader/performanceheader2.jpg);
+            "
             class="biography padding background-properties"
             id="content"
         >
             <div class="container">
                 <div class="sectionTitle paddingBottom">
                     <span class="heading-t3"></span>
-                    <h2>
-                        <a href="albums.html"
-                            ><strong style="color: #fff">LET'S PARTY</strong></a
-                        >
-                    </h2>
+                    <h2><a href="albums.html">PERFORMANCES</a></h2>
                     <span class="heading-b3"></span>
                 </div>
-                <!-- end sectionTitle -->
+                <!-- end sectionTtile -->
                 <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <div
-                            style="
-                                background: rgba(0, 0, 0, 0.7);
-                                display: inline-block;
-                                padding: 20px;
-                                border-radius: 10px;
-                                color: #fff;
-                                text-align: center;
-                                max-width: 100%;
-                            "
-                        >
-                            <p style="font-size: 1.9em; color: #fff">
-                                I specialize in creating unforgettable
-                                experiences for private parties and events. With
-                                over two decades of experience, I bring a blend
-                                of traditional vinyl and cutting-edge technology
-                                to ensure your event has the perfect soundtrack
-                                and atmosphere.
-                            </p>
-
-                            <p style="font-size: 1.9em; color: #fff">
-                                <strong>CUSTOMIZED ENTERTAINMENT</strong>
-                            </p>
-                            <p style="font-size: 1.9em; color: #fff">
-                                Every event is unique, and the playlist should
-                                suit it. With my extensive music knowledge and
-                                personalized playlists tailored to your event's
-                                unique vibe and audience preferences, I ensure a
-                                versatile and dynamic performance on the
-                                turntables that keeps the dance floor energized
-                                and guests entertained. Whether you're hosting
-                                an intimate gathering or a grand celebration,
-                                entertainment satisfaction is my first priority.
-                            </p>
-
-                            <p style="font-size: 1.9em; color: #fff">
-                                <strong>EVENT COORDINATION</strong>
-                            </p>
-                            <p style="font-size: 1.9em; color: #fff">
-                                From the initial consultation to the final song,
-                                I manage all aspects of your event's
-                                entertainment. My comprehensive services include
-                                seamless integration with your event timeline,
-                                coordination with other vendors, and real-time
-                                adaptability to ensure a smooth and stress-free
-                                experience. With two decades of experience in
-                                event management, no event is too big or too
-                                small.
-                            </p>
-
-                            <p style="font-size: 1.9em; color: #fff">
-                                <strong>EQUIPMENT</strong>
-                            </p>
-                            <p style="font-size: 1.9em; color: #fff">
-                                I provide only the best equipment, using
-                                state-of-the-art sound systems, wireless
-                                microphones, and Technics 1200 turntables
-                                alongside the innovative Pioneer S series mixer.
-                                I combine the best of the old with the best of
-                                the new to give you an authentic experience
-                                paired with the best sound modern systems can
-                                provide.
-                            </p>
-
-                            <p style="font-size: 1.9em; color: #fff">
-                                <strong>PROFESSIONALISM AND RELIABILITY</strong>
-                            </p>
-                            <p style="font-size: 1.9em; color: #fff">
-                                With a commitment to excellence, I pride myself
-                                on punctuality, professionalism, and the ability
-                                to read and adapt to any crowd. Your event's
-                                success is my top priority, and I measure it by
-                                the joy and satisfaction of you and your guests.
-                            </p>
-
-                            <p style="font-size: 1.9em; color: #fff">
-                                Whether it's a birthday, anniversary, or any
-                                special occasion, I deliver an exceptional
-                                entertainment experience that will leave lasting
-                                memories. Let me help you make your next private
-                                event extraordinary with a touch of class and a
-                                lot of fun.
-                            </p>
-                            <p style="font-size: 1.9em; color: #fff">
-                                <strong>LET'S PARTY</strong>
-                            </p>
+                    <div class="col-sm-6">
+                        <p>
+                            Emi Haze graduated from the Institute of Design in
+                            Verona with a degree in Graphic Design and
+                            Advertising Design.I live in the north-east of Italy
+                            and my huge passion is digital art. Art and painting
+                            connected to technology have always been my
+                            strongest passions. People think I am calm, quiet,
+                            sometimes introvert, really creative, inspired and
+                            perfectionist. In my opinion everything in every
+                            moment has an artistic side, the aesthetics of
+                            things, people around me... for me everything has
+                            its own importance, images, textures, sounds,
+                            fragrances, my creativity is costantly stimulated.
+                        </p>
+                        <p>
+                            I currently work as freelance and in the last years
+                            I focused on personal projects and creations in
+                            order to build, my own wide portfolio that could
+                            distinguish me both in style, technique and
+                            creativity. In my first works i focused on a graphic
+                            style based on construction and deconstruction of
+                            the human body using various tools and graphic
+                            effects that render it almost a sketch.
+                        </p>
+                        <p>
+                            In my recent works I tried to merge the human body
+                            with nature or rather with the four elements of
+                            fire, air, water and earth, and even with a fifth
+                            esoteric element: the Aristotelian ether, that
+                            includes all the others, the essence of celestial
+                            bodies, eternal and unchangeable in comparison with
+                            the earth as a place of change. The result is the
+                            vision of my imaginative world hanging between
+                            reality and fantasy, dream and utopia and in which
+                            color and sensitivity have the predominant role.
+                        </p>
+                        <p>
+                            I currently work as freelance and in the last years
+                            I focused on personal projects and creations in
+                            order to build, my own wide portfolio that could
+                            distinguish me both in style, technique and
+                            creativity. the essence of celestial bodies, eternal
+                            and unchangeable in comparison with the earth as a
+                            place of change. The result is the vision of my
+                            imaginative world hanging between reality and
+                            fantasy, dream and utopia and in which color and
+                            sensitivity have the predominant role.
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                            I currently work as freelance and in the last years
+                            I focused on personal projects and creations in
+                            order to build, my own wide portfolio that could
+                            distinguish me both in style, technique and
+                            creativity. In my first works i focused on a graphic
+                            style based on construction and deconstruction of
+                            the human body using various tools and graphic
+                            effects that render it almost a sketch. In my recent
+                            works I tried to merge the human body with nature or
+                            rather with the four elements of fire, air, water
+                            and earth, and even with a fifth esoteric element:
+                            the Aristotelian ether, that includes all the
+                            others, the essence of celestial bodies, eternal and
+                            unchangeable in comparison with the earth as a place
+                            of change. The result is the vision of my
+                            imaginative world hanging between reality and
+                            fantasy, dream and utopia and in which color and
+                            sensitivity have the predominant role.
+                        </p>
+                        <p>
+                            Photoshop is the software I prefer to conceive my
+                            works, in which I also include the digital version
+                            of hand-made elements, such as scratches and ink
+                            marks, acrylic or watercolor stains. The outcome is
+                            technically always appealing and intriguing. Music
+                            is the key of this creative process. I could mention
+                            Sigur Rós, Radiohead, Bloc Party, Coldplay, Bjork
+                            etc. I’m also fond of movies, I love every kind
+                            cinema, especially indie movies and art movies.
+                        </p>
+                        <p>
+                            Emi Haze graduated from the Institute of Design in
+                            Verona with a degree in Graphic Design and
+                            Advertising Design.I live in the north-east of Italy
+                            and my huge passion is digital art. Art and painting
+                            connected to technology have always been my
+                            strongest passions. People think I am calm, quiet,
+                            sometimes introvert, really creative, inspired and
+                            perfectionist. In my opinion everything in every
+                            moment has an artistic side, the aesthetics of
+                            things, people around me... for me everything has
+                            its own importance, images, textures, sounds,
+                            fragrances, my creativity is costantly stimulated.
+                        </p>
+                        <div class="signature">
+                            <a href="http://www.emihaze.com/showcase"
+                                >Emili Haze:</a
+                            >
+                            <div class="imgSignuature">
+                                <img
+                                    src="assets/img/content/signature.png"
+                                    alt=""
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

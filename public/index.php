@@ -1,4 +1,10 @@
-<?php include 'head.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <?php include "head.php"; ?>
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
 <body>
 <style scoped>
     .rsContent {
@@ -7,12 +13,6 @@
       background-position: center;
     }
   </style>
-
-	<div class="page-loader">
-	     <div class="vertical-align align-center">
-	          <img src="assets/loader/loader.gif" alt="" class="loader-img">
-	     </div>
-    </div>
 
 	<!-- =============== START BREADCRUMB ================ -->
 <style>
@@ -263,10 +263,10 @@
 	</div>
 	<!-- =============== END PLAYLIST ================ -->
 
-	<?php include('header.php') ?>
+	<?php include "header.php"; ?>
 
 	<!-- =============== START ALBUM COVER SECTION ================ -->
-<section class="padding albumsHome">
+<section id="demo-mixtapes" class="padding albumsHome">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -473,7 +473,7 @@
     }
 </style>
 
-<section class="videoHome padding">
+<section id="videos" class="videoHome padding">
     <div class="container">
         <div class="row">
             <div class="sectionTitle">
@@ -507,7 +507,7 @@
 
 
 	<!-- =============== START GALLERY SECTION ================ -->
-	<section style="padding-bottom:0; padding-top:0;">
+	<section id="press-shots" style="padding-bottom:0; padding-top:0;">
 		<div class="gallerySection">
 			<div class="container-fluid" style="padding:0;">
 				<div class="col-sm-12">
@@ -654,7 +654,7 @@
     }
 </style>
 
-<section class="contactHomePage">
+<section id="contact" class="contactHomePage">
     <div class="contactSection">
         <div class="container">
             <div class="contactContent">
