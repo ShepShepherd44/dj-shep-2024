@@ -11,11 +11,11 @@
 @import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
 @font-face {
   font-family: codeBold;
-  src: url(../fonts/codeBold.otf);
+  src: url(assets/fonts/codeBold.otf);
 }
 @font-face {
   font-family: codeLight;
-  src: url(../fonts/codeLight.otf);
+  src: url(assets/fonts/codeLight.otf);
 }
 .padding {
   padding: 18rem 0;
@@ -426,8 +426,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('assets/fonts/glyphicons-halflings-regular.eot');
+  src: url('assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('assets/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('assets/fonts/glyphicons-halflings-regular.woff') format('woff'), url('assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -7348,8 +7348,8 @@ table > tbody + tbody {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  src: url('assets/fonts/fontawesome-webfont.eot?v=4.4.0');
+  src: url('assets/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('assets/fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('assets/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('assets/fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('assets/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -9958,7 +9958,7 @@ body {
   -ms-flex: 0 0 24px;
   flex: 0 0 24px;
   height: 24px;
-  background: url("../img/stars.svg");
+  background: url("assets/img/stars.svg");
   background-position: 0 0;
   cursor: pointer;
 }
@@ -10154,7 +10154,7 @@ body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/disk.png) no-repeat center center;
+  background: url(assets/img/content/disk.png) no-repeat center center;
   z-index: 9;
 }
 .list-albums .list-feature li .albumIcon1 .disk {
@@ -10166,7 +10166,7 @@ body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/disk2.png) no-repeat center center;
+  background: url(assets/img/content/disk2.png) no-repeat center center;
   z-index: 9;
 }
 .list-albums .list-feature li .albumIcon2 .disk {
@@ -10178,7 +10178,7 @@ body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/disk1.png) no-repeat center center;
+  background: url(assets/img/content/disk1.png) no-repeat center center;
   z-index: 9;
 }
 .list-albums .list-feature li .albumIcon3 .disk {
@@ -10190,7 +10190,7 @@ body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/disk3.png) no-repeat center center;
+  background: url(assets/img/content/disk3.png) no-repeat center center;
   z-index: 9;
 }
 @media only screen and (max-width: 1025px) {
@@ -13149,7 +13149,7 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .fancybox-nav span {
-  background: url(../img/content/sprite.png) no-repeat #FFF;
+  background: url(assets/img/content/sprite.png) no-repeat #FFF;
   cursor: pointer;
   height: 55px;
   margin-top: -27px;
@@ -13369,12 +13369,12 @@ a.lightbox.hidden {
 #ava-slider .rsArrowLeft,
 #ava-slider-home .rsArrowLeft {
   left: 0;
-  cursor: url('../royalslider/grab-gallery-left-dark.png') 8 8, move !important;
+  cursor: url('assets/royalslider/grab-gallery-left-dark.png') 8 8, move !important;
 }
 #ava-slider .rsArrowRight,
 #ava-slider-home .rsArrowRight {
   right: 0;
-  cursor: url('../royalslider/grab-gallery-right-dark.png') 8 8, move !important;
+  cursor: url('assets/royalslider/grab-gallery-right-dark.png') 8 8, move !important;
 }
 #ava-slider-home .rsArrowLeft,
 #ava-slider-home .rsArrowRight {
@@ -14011,7 +14011,7 @@ img.rsImg {
 .rsMinW .rsPreloader {
   width: 20px;
   height: 20px;
-  background-image: url('../royalslider/skins/preloaders/preloader-white.gif');
+  background-image: url('assets/royalslider/skins/preloaders/preloader-white.gif');
   left: 50%;
   top: 50%;
   margin-left: -10px;
@@ -15334,7 +15334,7 @@ p a {
   position: relative;
   top: 1.5rem;
   color: #fff;
-  content: url(../img/content/aL.png);
+  content: url(assets/img/content/aL.png);
 }
 .owl-controls .owl-prev:hover {
   width: 7rem;
@@ -15371,7 +15371,7 @@ p a {
   top: 1.5rem;
   color: #fff;
   left: 2.5rem;
-  content: url(../img/content/aR.png);
+  content: url(assets/img/content/aR.png);
 }
 .owl-controls .owl-next:hover {
   width: 7rem;
