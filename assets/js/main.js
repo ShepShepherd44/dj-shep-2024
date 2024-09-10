@@ -1,19 +1,19 @@
 <!-- ================================================== -->
 <!-- =============== START BREADCRUMB JS ================ -->
 <!-- ================================================== -->
-
+	
 	var wH = jQuery(window).height();
 
 	jQuery('.breadcrumb-fullscreen').css('height',wH);
 
 	jQuery('.breadcrumb:not(.breadcrumb-fullscreen)').each(function(){
-
+        
         jQuery('header.header').addClass('no-breadcrumb-fullscreen');
 
     });
 
     jQuery('.breadcrumb.breadcrumb-video-content').each(function(){
-
+        
         jQuery('header.header').removeClass('no-breadcrumb-fullscreen');
 
     });
@@ -31,7 +31,7 @@ jQuery(function(){
 
     var breadcrumbH = jQuery('.breadcrumb').outerHeight();
 
-    if (jQuery(window).width() >= 1200){
+    if (jQuery(window).width() >= 1200){  
       jQuery('.breadcrumb-video-content').each(function(){
 
         breadcrumbH = (jQuery('.breadcrumb').outerHeight() - 250);
@@ -187,12 +187,20 @@ jQuery(function(){
 
 });
 
-jQuery(document).ready(function(){
+<!-- ================================================== -->
+<!-- =============== END BREACRUMB OPTIONS ================ -->
+<!-- ================================================== -->
 
+<!-- ================================================== -->
+<!-- =============== START STARTER JS ================ -->
+<!-- ================================================== -->
+  
+jQuery(document).ready(function(){
+  
   "use strict";
 
   // FitVides Option
-  //jQuery("html").fitVids({ customSelector: "iframe"});
+  jQuery("html").fitVids({ customSelector: "iframe"});
 
   // LightBox Options
   jQuery(".attachment").find('a > img:not(.attachment-thumbnail)').parent().attr('rel','gallery').fancybox({
@@ -226,7 +234,7 @@ jQuery(document).ready(function(){
       media : {}
     }
   });
-
+  
   // "single-post-content" is the class of blog-single content container
   jQuery(".single-post-content").find('a > img').parent().attr('rel','gallery').fancybox({
     fitToView: true,
@@ -260,7 +268,7 @@ jQuery(document).ready(function(){
       var wH = jQuery(window).height();
 
       jQuery(this).parent().css('height',wH);
-
+      
       jQuery(this).css('height',wH);
 
       jQuery(this).royalSlider({
@@ -347,7 +355,7 @@ jQuery(document).ready(function(){
 
         jQuery(this).parent().siblings().toggleClass('no-hovered');
         jQuery(this).parent().toggleClass('click');
-        jQuery(this).parent().siblings().removeClass('click');
+        jQuery(this).parent().siblings().removeClass('click'); 
     });
 
   jQuery('.menu-fixed-container > nav > ul > li > .sub-menu').parent().addClass('hover-sub-menu');
@@ -371,7 +379,7 @@ jQuery(document).ready(function(){
   /* COUNTER */
   /***********************************************************************************************/
   if ( $( '.sm-countdown' ).length > 0 ) {
-
+  
       $( '.sm-countdown' ).each( function() {
         var $this = $( this );
         var mode = $this.hasClass( 'sm-style1' ) ? 'val' : 'text';
@@ -385,9 +393,9 @@ jQuery(document).ready(function(){
             , r = true
             , delta_deg = 6
             , delta_rad = delta_deg / 180 * Math.PI;
-
+  
           this.g.lineWidth = this.lineWidth;
-
+  
           this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
           var sa_deg = parseInt(sa / Math.PI * 180) % 360;
           var ea_deg = parseInt(ea / Math.PI * 180) % 360;
@@ -397,7 +405,7 @@ jQuery(document).ready(function(){
           for (var ta_deg = sa_deg; ta_deg <= ea_deg_round; ta_deg += delta_deg) {
             this.g.beginPath();
             var ta_rad = ta_deg / 180 * Math.PI;
-            this.g.arc(this.xy, this.xy, this.radius, -( ta_rad - delta_rad / 4 ), -( ta_rad + delta_rad / 4 ), true);
+            this.g.arc(this.xy, this.xy, this.radius, -( ta_rad - delta_rad / 4 ), -( ta_rad + delta_rad / 4 ), true); 
             this.g.stroke();
           }
           var rs_deg = ea_deg_round + delta_deg;
@@ -405,7 +413,7 @@ jQuery(document).ready(function(){
             this.g.beginPath();
             var ta_rad = ta_deg / 180 * Math.PI;
             this.g.strokeStyle = this.o.bgColor;
-            this.g.arc(this.xy, this.xy, this.radius, -( ta_rad - delta_rad / 4) , -( ta_rad + delta_rad / 4 ), true);
+            this.g.arc(this.xy, this.xy, this.radius, -( ta_rad - delta_rad / 4) , -( ta_rad + delta_rad / 4 ), true); 
             this.g.stroke();
           }
           return false;
@@ -510,7 +518,7 @@ jQuery(document).ready(function(){
     items:1,
     nav:true,
     navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>']
-
+    
   });
   /***********************************************************************************************/
   /* END CAROUSEL */
@@ -519,21 +527,21 @@ jQuery(document).ready(function(){
          jQuery(window).scroll(function(){
 
             if(jQuery(document).scrollTop() > 300)
-            {
+            {    
                 jQuery('.goTop').css({bottom:"50px"});
             }
             else
-            {
+            {  
                jQuery('.goTop').css({bottom:"-80px"});
             }
-        });
+        }); 
         jQuery('#overlay').fadeOut();
       });
-
+       
     jQuery('.goTop').on("click",function(){
         jQuery('html, body').animate({scrollTop:0}, 'slow');
         return false;
-    });
+    }); 
   /***********************************************************************************************/
   /* INSTAGRAM */
   /***********************************************************************************************/
@@ -558,14 +566,14 @@ jQuery(document).ready(function(){
     /* JPLAYER */
     /***********************************************************************************************/
     jQuery('.trak-item audio').each(function(){
-
+      
         var seconds = jQuery(this)[0].duration;
         var duration = moment.duration(seconds, "seconds");
-
+        
         var time = "";
         var hours = duration.hours();
         if (hours > 0) { time = hours + ":" ; }
-
+        
         time = time + duration.minutes() + ":" + duration.seconds();
         jQuery(this).parent().find('.trak-duration').text(time);
     });
