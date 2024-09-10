@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Home</title>
-    <?php include "head.php"; ?>
+    {% render "head.html" %}
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
@@ -263,7 +263,7 @@
 	</div>
 	<!-- =============== END PLAYLIST ================ -->
 
-	<?php include "header.php"; ?>
+    {% render "header.html" %}
 
 	<!-- =============== START ALBUM COVER SECTION ================ -->
 <section id="demo-mixtapes" class="padding albumsHome">
