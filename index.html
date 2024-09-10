@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="assets/img/content/icon.png">
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+	<title>Home</title>
+</head>
+<body>
+<style scoped>
+    .rsContent {
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+	<!-- =============== START BREADCRUMB ================ -->
+<style>
+    .starTitle h2 {
+        font-size: 3em; /* Increased size */
+        color: #fff;
+    }
+    .starTitle h1 {
+        font-size: 15em; /* Increased size to be bigger than h2 */
+        color: #fff;
+        text-align: center;
+    }
+</style>
+
+<section class="no-mb" id="top">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="before-FullscreenSlider"></div>
+            <div class="breadcrumb-fullscreen-parent sliderContainerBreadcrumb">
+                <div class="starTitle">
+                    <h2>EVENTS - WEDDING</h2>
+                    <div class="grid__item">
+                        <h1>
+                            <a class="link link-yaku" href="#">
+                                <span>D</span><span>J</span><span>&nbsp;</span><span>S</span><span>H</span><span>E</span><span>P</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <h2>CORPORATE - CLUB</h2>
+                </div>
+                <div id="ava-slider" class="royalSlider heroSlider rsMinW change-header-items-color">
+                    <div class="rsContent" style="background-image: url(assets/img/header/djheader1.jpg);">
+                        <img class="rsImg" src="assets/img/header/djheader1.jpg" alt="">
+                    </div>
+                    <div class="rsContent" style="background-image: url(assets/img/header/djheader2.jpg);">
+                        <img class="rsImg" src="assets/img/header/djheader2.jpg" alt="">
+                    </div>
+                    <div class="rsContent" style="background-image: url(assets/img/header/djheader3.jpg);">
+                        <img class="rsImg" src="assets/img/header/djheader3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <style>
+                .introText {
+                    position: absolute;
+                    bottom: 40px;
+                    width: 100%;
+
+                    text-align: center;
+                    font-size: 5em; /* Doubled font size */
+
+                    /* Please dont use minus margins. It's bad pratice and breaks pages */
+                    /*margin-top: -250px;*/ /* Adjust this value to move the text higher up the page */
+                    /*margin-bottom: 40px;*/ /* Ensure enough space between the text and the heading */
+
+                    p {
+                        color: #fff;
+                    }
+                }
+            </style>
+            <div class="introText">
+                <p>A master of vinyl with two decades behind the turntables, DJ Shep electrifies dance floors with unmatched turntablism skills and an infectious energy that keeps the party alive.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============== END BREADCRUMB ================ -->
+
+
+
+
+	<!-- =============== START PLAYER ================ -->
+	<div class="main-music-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="mesh-main-player" class="jp-jplayer" data-audio-src="assets/audio/flute.mp3" data-title="Dj Shep Party Mix" data-artist="Tensnake"></div>
+
+		<div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="mesh-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="mesh-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="mesh-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="mesh-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						<button id="playlist-toggle" class="jplayerButton">
+							<span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+						</button>
+					</div>
+					<div class="center-side">
+						<div class="mesh-current-time">
+						</div>
+						<div class="mesh-seek-bar">
+							<div class="mesh-play-bar">
+							</div>
+						</div>
+						<div class="mesh-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						<div class="mesh-thumbnail">
+							<img src="assets/img/player/thumbnail.jpg" alt="">
+						</div>
+						<div class="mesh-title">
+						</div>
+						<div class="mesh-artist">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYER ================ -->
+
+	<!-- =============== START PLAYLIST ================ -->
+	<div class="playlist-wrapper" id="playlist-wrapper">
+		<div class="jp-playlist container">
+			<div class="about-list clearfix">
+				<span class="about-name">NAME</span>
+				<span class="about-length">LENGTH</span>
+				<span class="about-available">AVAILABLE ON</span>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/flute.mp3" data-artist="DJ Shep" data-thumbnail="assets/img/player/thumbnail.jpg" data-id="trak-200">
+				<audio preload="metadata" src="assets/audio/flute.mp3" title="Party Mix"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Dj Shep - Party Mix
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/2.mp3" data-artist="Jack U ft. Kiesza" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/2.mp3" title="Take You There"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Jack U ft. Kiesza - Take You There
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/3.mp3" data-artist="Bob Sinclair" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/3.mp3" title="Cinderella"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Bob Sinclair - Cinderella
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/4.mp3" data-artist="Yuna" data-thumbnail="assets/img/player/thumbnail.png" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/4.mp3" title="Lullabies"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Yuna - Lullabies
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYLIST ================ -->
+
+	<div class="page-loader">
+		<div class="vertical-align align-center">
+			<img src="assets/loader/loader.gif" alt="" class="loader-img">
+		</div>
+	</div>
+
+	<!-- =============== START TOP HEADER ================ -->
+	<div class="topHeader" >
+		<div class="header">
+			<div class="rightTopHeader">
+				<!-- Open Menu Button -->
+				<a class="open-menu">
+					<!-- Buttons Bars -->
+					<span class="span-1"></span>
+					<span class="span-2"></span>
+					<span class="span-3"></span>
+				</a>
+			</div><!-- end rightTopHeader -->
+		</div><!-- end header -->
+		<!-- Menu Fixed Container -->
+		<div class="menu-fixed-container">
+			<!-- Menu Fixed Centred Container -->
+			<nav>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+				<!-- Menu Fixed Primary List -->
+				<ul>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="/privateevents.php">
+							Private Events
+						</a>
+					</li>
+					<li>
+						<a href="/weddingservices.php">
+							Wedding Services
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="/performanceservices.php">
+							Performance
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="/index.php#demo-mixtapes">
+							Sample Mixes
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="/index.php#videos">
+							Videos
+						</a>
+						<!-- Menu Fixed Item -->
+					<li>
+						<a href="/index.php#press-shots">
+							Press Shots
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="/index.php#contact">
+							Bookings
+						</a>
+					</li>
+				</ul>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div><!-- end menu-fixed-container -->
+		<!-- =============== STAR LOGO ================ -->
+		<div class="logo-container-top">
+			<a href="/index.php"><img src="assets/img/logo/whiteLogo.png" alt="Aqura"></a>
+		</div><!-- end logo-container-top -->
+		<!-- =============== END LOGO ================ -->
+	</div><!-- end topHeader -->
+	<!-- =============== END TOP HEADER ================ -->
+
+	<!-- =============== START ALBUM COVER SECTION ================ -->
+<section id="demo-mixtapes" class="padding albumsHome">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="sectionTitle paddingBottom">
+                    <span class="heading-t3"></span>
+                    <h2><a href="albumsFullBackground.html">DEMO MIXTAPES</a></h2>
+                    <span class="heading-b3"></span>
+                </div><!-- end sectionTitle -->
+            </div><!-- end col-sm-12 -->
+        </div>
+        <div class="list-albums">
+            <ul class="list-feature col-md-12 col-xs-12 col-sm-12">
+                <li class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="album-icon">
+                        <span class="thumbs-album">
+                            <a href="https://www.mixcloud.com/shepshepherd/80s-chillax-mixed-by-dj-shep/" target="_blank"><img src="assets/img/albums/mixtape1.jpg" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+                        </span>
+                        <span class="disk"></span>
+                    </div><!-- END ALBUM ICON -->
+                    <div class="name">
+                        <h3>80's CHILL</h3>
+                        <p>80's SLOW JAMS</p>
+                    </div><!-- end name -->
+                </li>
+
+                <li class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="album-icon albumIcon1">
+                        <span class="thumbs-album">
+                            <a href="https://www.mixcloud.com/shepshepherd/jet-star-meets-hospital-records-mixed-by-dj-shep/" target="_blank"><img src="assets/img/albums/mixtape2.jpg" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+                        </span>
+                        <span class="disk"></span>
+                    </div>
+                    <div class="name">
+                        <h3>HOSPITAL RECORDS</h3>                                    <p>DRUM & BASS</p>
+                    </div>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="album-icon albumIcon2">
+                            <span class="thumbs-album">
+                                <a href="https://www.mixcloud.com/shepshepherd/2pac-tribute-mix-dj-shep-paul-bartlett/" target="_blank"><img src="assets/img/albums/mixtape3.jpg" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+                                </span>
+                            <span class="disk"></span>
+                        </div>
+                        <div class="name">
+                            <h3>2PAC TRIBUTE</h3>                                <p>HIP HOP</p>
+                        </div>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="album-icon albumIcon3">
+                            <span class="thumbs-album">
+                                <a href="https://www.mixcloud.com/shepshepherd/dj-shep-hip-hop-funk-bangers-mix/" target="_blank"><img src="assets/img/albums/mixtape4.jpg" class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+                                </span>
+                            <span class="disk"></span>
+                        </div>
+                        <div class="name">
+                            <h3>PARTY BANGERS</h3>                                <p>MIXED GENRE</p>
+                        </div>
+                    </li>
+            </ul>
+        </div><!-- end list-albums -->
+    </div><!-- end container -->
+</section>
+<!-- =============== END ALBUM COVER SECTION ================ -->
+
+
+
+
+
+	<!-- =============== START HOME-BLOG SECTION ================ -->
+<section class="padding background-properties blogHomeSection" style="background-image: url(assets/img/blog/shepcorporate.png);">
+	<div class="container">
+		<div class="row">
+			<div class="sectionTitle paddingBottom">
+				<span class="heading-t3"></span>
+				<h2><a href="blogGrid.html" style="color: white; font-weight: bold;">SERVICES</a></h2>
+				<span class="heading-b3"></span>
+			</div><!-- end sectionTtile -->
+
+			<div class="col-sm-6 col-md-3">
+				<div class="blogBox">
+					<div class="imgBox"><img src="assets/img/blog/privateevents.jpg" alt="box-img"></div>
+					<div class="blogBoxContent">
+						<div class="blogHeader">
+							<h1><a href="privateevents.html">PRIVATE EVENTS</a></h1>
+						</div>
+						<div class="admin-list clearfix">
+							<ul>
+
+							</ul>
+						</div><!-- end admin-list -->
+
+						<div class="blogParagraph">
+							<p>Every event is unique, and the playlist should suit it. Whether you're hosting an intimate gathering or a grand celebration, I provide a versatile and dynamic performance on the turntables that sets the atmosphere and gets the dance floor moving.</p>
+						</div><!--end blogParagraph  -->
+						<div class="rmButton">
+							<a href="privateevents.html">Read More</a>
+						</div>
+					</div><!-- end blogBoxContent -->
+				</div><!-- end blogBox -->
+			</div><!-- end col-sm-3 -->
+
+			<div class="col-sm-6 col-md-3">
+				<div class="blogBox">
+					<div class="imgBox"><img src="assets/img/blog/weddingevent.png" alt="box-img"></div>
+					<div class="blogBoxContent">
+						<div class="blogHeader">
+							<h1><a href="weddingservices.html">WEDDINGS</a></h1>
+						</div>
+						<div class="admin-list clearfix">
+							<ul>
+
+							</ul>
+						</div><!-- end admin-list -->
+
+						<div class="blogParagraph">
+							<p>Everyone will remember three things about your wedding: the dress, the food, and the music. I am a professional DJ who can read the room and has the talent to fill the dance floor, playing all genres of music from the moment your guests arrive until the last song.</p>
+						</div><!--end blogParagraph  -->
+						<div class="rmButton">
+							<a href="weddingservices.html">Read More</a>
+						</div>
+					</div><!-- end blogBoxContent -->
+				</div><!-- end blogBox -->
+			</div><!-- end col-sm-3 -->
+
+			<div class="col-sm-6 col-md-3">
+				<div class="blogBox">
+					<div class="imgBox"><img src="assets/img/blog/corporateparty.png" alt="box-img"></div>
+					<div class="blogBoxContent">
+						<div class="blogHeader">
+							<h1><a href="corporateservices.html">CORPORATE</a></h1>
+						</div>
+						<div class="admin-list clearfix">
+							<ul>
+
+							</ul>
+						</div><!-- end admin-list -->
+
+						<div class="blogParagraph">
+							<p>I provide music and entertainment for corporate events of any size. Whether you are entertaining employees, clients, or launching a new product. I deliver top professionalism and perfectly reflect your brand while providing the ideal soundtrack</p>
+						</div><!--end blogParagraph  -->
+						<div class="rmButton">
+							<a href="corporateservices.html">Read More</a>
+						</div>
+					</div><!-- end blogBoxContent -->
+				</div><!-- end blogBox -->
+			</div><!-- end col-sm-3 -->
+
+			<div class="col-sm-6 col-md-3">
+				<div class="blogBox">
+					<div class="imgBox"><img src="assets/img/blog/performanceevent.jpg" alt="box-img"></div>
+					<div class="blogBoxContent">
+						<div class="blogHeader">
+							<h1><a href="performanceservices.html">PERFORMACE</a></h1>
+						</div>
+						<div class="admin-list clearfix">
+							<ul>
+
+							</ul>
+						</div><!-- end admin-list -->
+
+						<div class="blogParagraph">
+							<p>Looking for more than your push-button DJ? I provide performance-based DJ sets, incorporating live video mixing through projection or performing live alongside musicians, dancers, or action sports. Get in contact, and I can tailor a package for you.
+</p>
+						</div><!--end blogParagraph  -->
+						<div class="rmButton">
+							<a href="performanceservices.html">Read More</a>
+						</div>
+					</div><!-- end blogBoxContent -->
+				</div><!-- end blogBox -->
+			</div><!-- end col-sm-3 -->
+
+		</div><!-- end row -->
+	</div><!-- end container -->
+</section>
+<!-- =============== END HOME-BLOG SECTION ================ -->
+
+
+
+	<!-- =============== START TWITTER SECTION ================ -->
+	<section class="padding background-properties" style="background-image: url(assets/img/twitter/shepbride.png);">
+		<div class="twitter">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="twitterLogo">
+							<a href="#"><img src="assets/img/content/middlelogo.png" alt="middlelogo"></a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END TWITTER SECTION ================ -->
+
+	<!-- =============== START VIDEO SECTION ================ -->
+<style>
+    .videoHome .col-sm-4 {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<section id="videos" class="videoHome padding">
+    <div class="container">
+        <div class="row">
+            <div class="sectionTitle">
+                <span class="heading-t3"></span>
+                <h2><a href="video.html">DJ SHEP VIDEOS</a></h2>
+                <span class="heading-b3"></span>
+                <p>Check out my latest videos and follow me on <a href="https://www.youtube.com/@shep_shepherd" target="_blank">YouTube</a> to view more.</p>
+            </div><!-- end sectionTtile -->
+            <div class="col-md-4">
+                <iframe src="https://www.youtube.com/embed/bPqGJBXYU30" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4">
+                <iframe src="https://www.youtube.com/embed/lloFuvcoaek?si=iirc3hvNIVMrpW1V" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4">
+                <iframe src="https://www.youtube.com/embed/4UftOq0L4lk?si=Z03NZMzT5VLM_LX2" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============== END VIDEO SECTION ================ -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- =============== START GALLERY SECTION ================ -->
+	<section id="press-shots" style="padding-bottom:0; padding-top:0;">
+		<div class="gallerySection">
+			<div class="container-fluid" style="padding:0;">
+				<div class="col-sm-12">
+					<!-- Content Container -->
+					<div class="content-container clearfix">
+						<!-- Single Album Container -->
+						<div class="single-photo-album-container">
+							<div class="row">
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<!-- Single Album Image -->
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/gallery/djshep1.jpg" alt="">
+												<div class="overlay">
+												   <a class="info lightbox" href="assets/img/gallery/djshep1.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+										<!-- Single Album View Button -->
+
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/djshepsquare1.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/djshepsquare1.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/djshepsquare2.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/djshepsquare2.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/djsheprecord2.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/djsheprecord2.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/djshepboombox.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/djshepboombox.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+											<img class="img-responsive" src="assets/img/gallery/djshepscratch.jpg" alt="">
+											<div class="overlay">
+											   <a class="info lightbox" href="assets/img/gallery/djshepscratch.jpg"></a>
+											</div>
+										</div>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</div>
+	</section>
+	<!-- =============== END GALLERY SECTION ================ -->
+
+	<!-- =============== START CONTACT ME SECTION ================ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+    .contactHomePage {
+        padding: 80px 0;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    .contactHomePage .sectionTitle {
+        margin-bottom: 40px;
+    }
+    .contactHomePage h2 {
+        font-size: 3em; /* Increased font size */
+        margin-bottom: 20px;
+    }
+    .contactHomePage p {
+        font-size: 2em; /* Increased font size */
+        margin-bottom: 40px;
+    }
+    .contactHomePage .btn {
+        display: inline-block;
+        padding: 20px 40px;
+        font-size: 2em; /* Increased font size */
+        color: #fff;
+        background-color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 20px;
+    }
+    .contactHomePage .btn:hover {
+        background-color: #333;
+    }
+</style>
+
+<section id="contact" class="contactHomePage">
+    <div class="contactSection">
+        <div class="container">
+            <div class="contactContent">
+                <div class="sectionTitle">
+                    <span class="heading-t3"></span>
+                    <h2>Send an Enquiry</h2>
+                    <span class="heading-b3"></span>
+                    <br><br>
+                    <p>For bookings or enquiries, please feel free to contact me. <br><br> I'm available for various events and services.</p>
+                    <a href="mailto:shep@djshep.com.au" class="btn">Contact Me</a>
+                    <div class="social-btns">
+                        <a href="https://www.instagram.com/shep_shep_shep" class="btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.mixcloud.com/shepshepherd" class="btn"><i class="fab fa-mixcloud"></i></a>
+                        <a href="https://www.youtube.com/@shep_shepherd" class="btn"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.twitch.tv/dj_shep_shepherd" class="btn"><i class="fab fa-twitch"></i></a>
+                        <a href="https://kick.com/dj-shep" class="btn"><i class="fab fa-kickstarter"></i></a>
+                    </div>
+                </div><!-- end sectionTitle -->
+            </div><!-- end contactContent -->
+        </div><!-- end container -->
+    </div><!-- end contactSection -->
+</section>
+<!-- =============== END CONTACT ME SECTION ================ -->
+
+
+
+
+
+
+	<!-- =============== START FOOTER ================ -->
+	<section style="background-color:#eeeeee;">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="#">&copy; Aqura 2016</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<ul class="clearfix">
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-twitter"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-facebook"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-apple"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-lastfm"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-soundcloud"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-youtube-play"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i class="fa fa-vimeo"></i><span></span></a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-4">
+						<div class="goTop back-to-top" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Go Top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END FOOTER ================ -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/mainSlider.js"></script>
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+
+</body>
+</html>
