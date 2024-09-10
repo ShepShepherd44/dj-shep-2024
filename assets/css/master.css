@@ -13369,12 +13369,12 @@ a.lightbox.hidden {
 #ava-slider .rsArrowLeft,
 #ava-slider-home .rsArrowLeft {
   left: 0;
-  cursor: url('assets/royalslider/grab-gallery-left-dark.png') 8 8, move !important;
+  cursor: url('/assets/royalslider/grab-gallery-left-dark.png') 8 8, move !important;
 }
 #ava-slider .rsArrowRight,
 #ava-slider-home .rsArrowRight {
   right: 0;
-  cursor: url('assets/royalslider/grab-gallery-right-dark.png') 8 8, move !important;
+  cursor: url('/assets/royalslider/grab-gallery-right-dark.png') 8 8, move !important;
 }
 #ava-slider-home .rsArrowLeft,
 #ava-slider-home .rsArrowRight {
