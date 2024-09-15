@@ -29,7 +29,6 @@
             }
 
             const navItemUrl = new URL(e.currentTarget.href);
-            console.log(window.location.pathname, navItemUrl.pathname)
             if (window.location.pathname === navItemUrl.pathname) {
                 const scrollTarget = document.getElementById(navItemUrl.hash.substring(1, navItemUrl.hash.length));
                 closeMenu();
