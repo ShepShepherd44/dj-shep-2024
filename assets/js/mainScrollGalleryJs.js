@@ -311,7 +311,7 @@ jQuery(document).ready(function(){
         'background-position': '50% ' + actualScroll + 'px'
       });
 
-      console.log(actualScroll);
+      
 
     });
 
