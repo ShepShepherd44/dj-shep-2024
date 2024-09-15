@@ -53,3 +53,13 @@
         margin-bottom: 30px;
     }
 }
+
+.footer {
+    .social-icons {
+        /* They are unused, so we hide them for now */
+        display: none;
+        a {
+            color: white;
+        }
+    }
+}
