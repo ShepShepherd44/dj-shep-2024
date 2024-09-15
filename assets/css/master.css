@@ -12671,9 +12671,6 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
 .menu-fixed-container nav ul li a:hover {
   color: #bb9b69 !important;
 }
-.menu-fixed-container nav ul li.no-hovered > a {
-  color: rgba(0, 0, 0, 0.1);
-}
 .menu-fixed-container nav ul li .sub-menu {
   visibility: hidden;
   opacity: 0;
